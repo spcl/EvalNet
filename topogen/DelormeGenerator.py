@@ -155,6 +155,7 @@ class DelormeGenerator(TopologyGenerator):
     def get_file_name(self, q : int) -> str:
         return "Delorme." + str(q) + ".adj.txt"
 
+
 class GF:
     def __init__(self,q):
         if q == 2:

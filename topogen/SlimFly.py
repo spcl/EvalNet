@@ -45,7 +45,7 @@ class SlimFly(Topology):
         """
 
         if(q == -1 and N != -1):
-            # find th lowest q of the three posibilites that support at least N endnodes
+            # find the lowest q of the three possibilites that support at least N endnodes
             candidate_q0 = approx_inverse(2*N, lambda q: q*q*(3*q))
             candidate_q1 = approx_inverse(2*N, lambda q: q*q*((3*q - 1)))
             candidate_q3 = approx_inverse(2*N, lambda q: q*q*((3*q + 1)))

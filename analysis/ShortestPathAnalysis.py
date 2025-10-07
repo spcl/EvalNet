@@ -54,7 +54,6 @@ class ShortestPathAnalysis(Analysis):
 
         res.close()
     
-
     # private methods
     def __count_shortest_paths_sparse(self, graph, limit, collect, count=100000, parallel=False):
         r = list(range(0, graph.edge))

@@ -76,4 +76,3 @@ def validate_hypercube():
         print("VALIDATION PASSED")
     else:
         print("VALIDATION NOT PASSED")
-

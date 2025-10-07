@@ -40,7 +40,7 @@ def validate(graph : [[int]], q : int, r0 : int, r1 : int):
     if (r1 > 0):
         r0 = 0
 
-    #check size
+    # check size
     if (q%2 == 0):
         if (r0 > 0):
             r0 = 1
@@ -80,7 +80,7 @@ def validate(graph : [[int]], q : int, r0 : int, r1 : int):
         print("      --> construction error: imbalanced degrees, max = " + str(max_degree) + ", min = " + str(min_degree))
         return 0
 
-    #check diameter
+    # check diameter
     exp_diam = 2
     if (r1 > 0):
         exp_diam += 1
@@ -89,7 +89,7 @@ def validate(graph : [[int]], q : int, r0 : int, r1 : int):
          print("     --> construction error: incorrect diameter")
          return 0
 
-    #check average shortest path length
+    # check average shortest path length
     apl = nx.average_shortest_path_length(nx_graph)
     if (apl >= 2):
          print("     --> construction error: incorrect average path length")

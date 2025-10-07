@@ -63,7 +63,6 @@ class ArrangementNetworkGenerator(TopologyGenerator):
         arrNetworkTopology = [ entry[1]  for entry in topology.values() ] 
 
         return arrNetworkTopology
- 
     
     def validate(self, topo : [[int]], n : int, k: int) -> bool:
         return validate(topo,n,k)
