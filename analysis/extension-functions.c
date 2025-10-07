@@ -652,5 +652,3 @@ int sqlite3_extension_init(
   return 0;
 }
 #endif /* COMPILE_SQLITE_EXTENSIONS_AS_LOADABLE_MODULE */
-
-

@@ -36,7 +36,7 @@ def validate(graph : [[int]], k : int) -> int:
         print("     --> construction error: not undirected")
         return 0
 
-    # construct a Networkx graph (undirected, no multi-edges) for further validation
+    # construct a NetworkX graph (undirected, no multi-edges) for further validation
     nx_graph = listgraph_to_nxgraph(graph)
 
     # check if graph is connected

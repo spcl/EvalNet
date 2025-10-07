@@ -232,7 +232,7 @@ class BrownExtGenerator(TopologyGenerator):
         #############Replicate other vertex subsets#################
         ############################################################
         for r in range(r1):
-            cl_id   = r #Round-robin
+            cl_id   = r # Round-robin
             num_ext = len(quad_neigh_sets[cl_id])
             assert(num_ext == self.q + 1)
 
@@ -275,10 +275,10 @@ class BrownExtGenerator(TopologyGenerator):
                     
                 for neigh in brown_graph[v]:
                     assert(neigh != v)
-                    #already dealt with
+                    # already dealt with
                     if ((neigh == v_rep) or (neigh in replicas[v])): 
                         continue
-                    #neighbor in replicated set
+                    # neighbor in replicated set
                     if (neigh in quad_neigh_sets[cl_id]):
                         assert(neigh in v_to_rep)
                         neigh_rep   = v_to_rep[neigh]
@@ -325,7 +325,7 @@ def clean_graph(graph):
         graph[v].sort()
         tmp = [graph[v][0]]
 
-        #remove all self-loop and multi-edges
+        # remove all self-loop and multi-edges
         for u in graph[v]:
             if ((u != tmp[-1]) and (u != v)):
                 tmp.append(u)

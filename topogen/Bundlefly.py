@@ -37,7 +37,7 @@ class Bundlefly(Topology):
         """
 
         if(q == -1 and N != -1):
-            # find th lowest q of the three posibilites that support at least N endnodes
+            # find the lowest q of the three possibilites that support at least N endnodes
             candidate_q  = approx_inverse(4*N, lambda q: (q*q*q*q)/3)
 
             # check form of q

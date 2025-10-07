@@ -36,7 +36,7 @@ def validate(graph : [[int]], q : int):
          print("     --> construction error: incorrect degrees")
          return 0
 
-    #check diameter
+    # check diameter
     diameter = nx.diameter(nx_graph)
     if diameter != 3:
         print("     --> construction error: incorrect diameter")

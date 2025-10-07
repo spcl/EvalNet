@@ -66,7 +66,7 @@ class BrownExt(Topology):
         self.edge   = self.R
         self.name   = "BRO_EXT"
 
-        #private fields
+        # private fields
         self.__topo = None
 
     def get_topo(self):

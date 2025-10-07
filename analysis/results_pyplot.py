@@ -115,7 +115,6 @@ def pyplot(outfile, size, manual, **kwargs):
                     if jf:
                         plotDataJF.append([d[0] for d in data[numPlots + i][j]])
               
-                
                 n = axs[0][i].hist(plotData,bins,density=density, histtype='bar', label=classes, align='mid', color=colors)[0]
                 if jf:
                     nJF = axs[1][i].hist(plotDataJF,bins,density=density, histtype='bar', label=classes, align='mid', color=colors)[0]
@@ -284,13 +283,12 @@ def pyplot(outfile, size, manual, **kwargs):
                             if maxValue < entry:
                                 maxValue = entry
 
-            #plot data
+            # plot data
             for i in range(numPlots):
                 for j in range(l_min):
                     # eliminate 0 values
                     h = np.ma.masked_array(plotData[i][j],plotData[i][j]<=0)
                     im = axs[i][j].imshow(h.T, cmap=cm.gray, interpolation='nearest', norm=LogNorm(vmin=1,vmax=maxValue), zorder=2)
-                  
 
             # design
             for i in range(numPlots):
@@ -333,7 +331,7 @@ def pyplot(outfile, size, manual, **kwargs):
             topos.sort()
             numPlots = len(topos)
   
-            data = [] #data[i][j] holds data of topo[i] and l=j+1
+            data = [] # data[i][j] holds data of topo[i] and l=j+1
            
             for i in range(numPlots):
                 t = topos[i]
