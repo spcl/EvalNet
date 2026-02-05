@@ -72,7 +72,7 @@ class ShortestPathPlotter(Plotter):
         else:
             class_distinction = ' case when n_e < %d then %d' %(classes[1], classes[0])
             for i in range(1, len(classes) - 1):
-                class_distinction += 'when n_e < %d then %d' %(classes[i+1], classes[i])
+                class_distinction += ' when n_e < %d then %d' %(classes[i+1], classes[i])
             class_distinction += ' else %d end '  %(classes[len(classes) - 1])
 
 
