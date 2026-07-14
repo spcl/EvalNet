@@ -196,14 +196,18 @@ If you find this repository useful, please consider giving it a star! If you hav
 When using EvalNet in your work, please reference us with the citation provided below:
 
 ```bibtex
-@misc{besta2025evalnet,
+@inproceedings{besta2026evalnet,
   title = {{EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects}},
-  author = {Besta, Maciej and Patrick Iff and Marcel Schneider and Nils Blach and Alessandro Maissen and Salvatore Di Girolamo and Jens Domke and Jascha Krattenmacher and Ankit Singla and Kartik Lakhotia and Laura Monroe and Fabrizio Petrini and Robert Gerstenberger and Hoefler, Torsten},
-  year = 2025,
-  month = Jun,
-  doi = {10.48550/arXiv.2105.12663},
-  url = {http://arxiv.org/abs/2105.12663},
-  eprinttype = {arXiv},
-  eprint = {2105.12663}
+  author = {Besta, Maciej and Patrick Iff and Marcel Schneider and Nils Blach and Alessandro Maissen and Salvatore Di Girolamo and Jens Domke and Jascha Krattenmacher and Kartik Lakhotia and Laura Monroe and Fabrizio Petrini and Robert Gerstenberger and Hoefler, Torsten},
+  year = 2026,
+  month = May,
+  doi = {10.1109/IPDPS65963.2026.00072},
+  url = {https://ieeexplore.ieee.org/document/11575429},
+  booktitle = {Proceedings of the 40th IEEE Interational Parallel and Distributed Processing Symposium},
+  pages = {804--818},
+  address = {New Orleans, LA, USA},
+  publisher = {IEEE Press},
+  isbn = {979-8-3195-0602-3},
+  series = {IPDPS '26}
 }
 ```
